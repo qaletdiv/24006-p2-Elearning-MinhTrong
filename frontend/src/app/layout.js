@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <div>
+          <div className="mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-[1580px]">
             {children}
           </div>
         </body>

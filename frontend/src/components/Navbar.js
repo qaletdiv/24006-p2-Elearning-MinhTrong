@@ -2,7 +2,7 @@
 
 import ButtonLink from '@/components/ButtonLink';
 import { UserButton, useUser } from '@clerk/nextjs';
-import { Search } from 'lucide-react';
+import { Book, Search } from 'lucide-react';
 import Image from 'next/image'
 import React from 'react'
 
@@ -14,11 +14,11 @@ const Navbar = () => {
             <Image src='/logo.svg' alt='logo' width={140} height={100} />
 
             <div className='border rounded-4xl flex items-center grow py-3'>
-                <form className='flex gap-3 items-center'>
+                <form className='flex gap-3 items-center w-full'>
                     <button className='pl-3'>
                         <Search />
                     </button>
-                    <input placeholder='Search for anything' />
+                    <input placeholder='Search for anything' className='w-full outline-none' />
                 </form>
             </div>
 
@@ -40,6 +40,7 @@ const Navbar = () => {
 
                         <div className='scale-[1.5]'>
                             <UserButton afterSignOutUrl='/' />
+
                         </div>
                     </div>
                 )}
