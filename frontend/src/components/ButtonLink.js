@@ -5,8 +5,8 @@ const ButtonLink = ({ href, children, variant = "primary", className = "" }) => 
     const baseClass = "w-24 py-3 rounded-sm font-bold text-sm text-center inline-block border";
 
     const variants = {
-        primary: "bg-purple-700 text-white border-purple-600",
-        secondary: "text-purple-800 border-purple-600",
+        primary: "bg-[#6d28d2] text-white border-[#6d28d2]",
+        secondary: "text-[#6d28d2] border-[#6d28d2]",
     }
 
     return (

@@ -1,9 +1,14 @@
-import Image from "next/image";
+import Footer from "@/components/Footer/Footer";
+import Featured from "@/components/Screen/Featured/Featured";
+import HomePage from "@/components/Screen/HomePage/HomePage";
+
 
 export default function Home() {
   return (
     <div>
-      <h1>HomePage</h1>
+      <HomePage />
+      <Featured />
+      <Footer />
     </div>
   );
 }
